@@ -99,7 +99,6 @@
   hardware.ledger.enable = true;
 
   programs = {
-    wireshark.enable = true;
     zsh = {
       enable = true;
       interactiveShellInit = ''
