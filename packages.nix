@@ -1,6 +1,6 @@
 { pkgs, ... }: {
  environment.systemPackages = with pkgs; [
-    wget vim git pv nodejs brightnessctl system-config-printer
+    wget vim git pv nodejs brightnessctl system-config-printer ccid
   ];
 
 
