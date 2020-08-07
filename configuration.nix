@@ -7,6 +7,7 @@
       ./users.nix
       ./fonts.nix
       ./packages.nix
+      ./keybase.nix
     ];
 
   boot = {
@@ -24,7 +25,7 @@
     #nameservers = [ "1.1.1.1" "9.9.9.9" ];
     firewall = {
       allowPing = true;
-      allowedTCPPorts = [ 3000 8080 ];
+      allowedTCPPorts = [ 3000 8080 25565 ];
     };
   };
 
