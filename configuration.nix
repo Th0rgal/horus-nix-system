@@ -12,6 +12,7 @@
 
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
+    supportedFilesystems = [ "ntfs" ];
     cleanTmpDir = true;
     loader = {
       systemd-boot.enable = true;
