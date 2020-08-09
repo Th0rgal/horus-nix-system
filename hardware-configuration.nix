@@ -15,11 +15,11 @@
 
   fileSystems = { 
     "/" =
-      { device = "/dev/disk/by-uuid/2155232b-33a6-4a77-aab1-9bcb0aa4af50";
+      { device = "/dev/disk/by-label/nixos";
         fsType = "ext4";
       };
     "/boot" =
-      { device = "/dev/disk/by-uuid/64C0-C47D";
+      { device = "/dev/disk/by-label/EFI";
         fsType = "vfat";
       };
   };
@@ -28,4 +28,11 @@
 
   nix.maxJobs = lib.mkDefault 8;
   powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
+
+  fileSystems."/windows" =
+    { device = "/dev/disk/by-label/OS";
+      fsType = "ntfs"; 
+      options = [ "rw" "uid=thomas"];
+    };
+
 }
