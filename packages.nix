@@ -59,6 +59,15 @@
         neovim = super.neovim.override {
           viAlias = true;
           vimAlias = true;
+          configure = {
+              #customRC = ''
+                # here your custom configuration goes!
+              #'';
+              packages.myVimPackage = with pkgs.vimPlugins; {
+                start = [ vim-nix ];
+                opt = [ ];
+              };      
+          };
         };
       })
     ];
