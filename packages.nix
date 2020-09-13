@@ -26,6 +26,12 @@
         sha256 = "08lhzhrn6p0xwi0hcyp6lj9bvpfj87vr99klzsiy8ji7621dzql3";
       }
       {
+        name = "docs-yaml";
+        publisher = "docsmsft";
+        version = "0.2.5";
+        sha256 = "1ix1l4xvxasbcc2z8hbf5ph3pfzz3vjrhbwc0qrf55b8a4sq8hql";
+      }
+      {
         name = "markdown-preview-enhanced";
         publisher = "shd101wyy";
         version = "0.5.13";
