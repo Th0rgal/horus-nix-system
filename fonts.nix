@@ -7,9 +7,9 @@
     enableDefaultFonts = true; 
     enableFontDir = true;
     fonts = with pkgs; [
-        nerd-fonts.fira-code
-        nerd-fonts.jetbrains-mono
-	      corefonts
+        nerd-fonts.firacode
+        nerd-fonts.jetbrainsmono
+        corefonts
         dejavu_fonts
         source-code-pro
         ubuntu_font_family

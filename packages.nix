@@ -1,5 +1,9 @@
 { pkgs, ... }: {
 
+  environment.systemPackages = with pkgs; [
+    wget vim git pv nodejs brightnessctl system-config-printer ccid
+  ];
+
   imports = [
     ./vscode.nix
   ];
@@ -27,15 +31,19 @@
         version = "0.5.13";
         sha256 = "0ixw6x6cvfr97ldrmn5ls5kcn788pp6qay05mrsjz7fadmhidyxa";
       }
+      {
+        name = "vsc-material-theme-icons";
+        publisher = "Equinusocio";
+        version = "1.2.0";
+        sha256 = "0wh295ncm8cbxmw9i3pvg703sn1gw7vp3slbklwjxskb4zivvfk4";
+      }
     ];
+
   nixpkgs.latestPackages = [
     "vscode"
     "vscode-extensions"
   ];
 
- environment.systemPackages = with pkgs; [
-    wget vim git pv nodejs brightnessctl system-config-printer ccid
-  ];
 
   services = {
     # Enable the X11 windowing system.
