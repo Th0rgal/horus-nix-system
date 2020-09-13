@@ -1,8 +1,11 @@
 { pkgs, ... }: {
 
-  environment.systemPackages = with pkgs; [
-    wget vim git pv nodejs brightnessctl system-config-printer ccid
-  ];
+  environment = {
+    systemPackages = with pkgs; [
+      neovim wget git pv nodejs brightnessctl system-config-printer ccid
+    ];
+    variables.EDITOR = "nvim";
+  };
 
   imports = [
     ./vscode.nix
@@ -45,11 +48,21 @@
       }
     ];
 
-  nixpkgs.latestPackages = [
-    "vscode"
-    "vscode-extensions"
-  ];
+  nixpkgs = {
+    latestPackages = [
+      "vscode"
+      "vscode-extensions"
+    ];
 
+    overlays = [
+      (self: super: {
+        neovim = super.neovim.override {
+          viAlias = true;
+          vimAlias = true;
+        };
+      })
+    ];
+  };
 
   services = {
     # Enable the X11 windowing system.
