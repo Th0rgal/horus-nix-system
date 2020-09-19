@@ -105,7 +105,7 @@
   };
 
   # Enable bluetooth
-  hardware.bluetooth.enable = true;
+  hardware.bluetooth.enable = false;
 
   # Enable sound.
   sound.enable = true;
