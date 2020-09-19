@@ -101,7 +101,7 @@
     tlp.enable = true;
 
     # Enable bluetooth service
-    blueman.enable = true;
+    blueman.enable = false;
   };
 
   # Enable bluetooth
