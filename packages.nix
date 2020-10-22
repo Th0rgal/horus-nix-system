@@ -2,10 +2,12 @@
 
   environment = {
     systemPackages = with pkgs; [
-      neovim wget git pv nodejs brightnessctl system-config-printer ccid
+      neovim wget git pv nodejs brightnessctl system-config-printer ccid libimobiledevice
     ];
     variables.EDITOR = "nvim";
   };
+
+  services.usbmuxd.enable = true;
 
   imports = [
     ./vscode.nix
