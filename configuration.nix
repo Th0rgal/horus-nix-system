@@ -38,7 +38,7 @@
   i18n.defaultLocale = "fr_FR.UTF-8";
   time.timeZone = "Europe/Paris";
 
-  system.stateVersion = "20.03";
+  system.stateVersion = "20.09";
   nixpkgs.config.allowUnfree = true;
 
 }
