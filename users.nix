@@ -3,7 +3,7 @@
   users = {
     users.thomas = {
      isNormalUser = true;
-     extraGroups = [ "wheel" "networkmanager" "video" "plugdev" ];
+     extraGroups = [ "wheel" "networkmanager" "video" "audio" "plugdev" ];
     };
   };
 }
