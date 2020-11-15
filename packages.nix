@@ -48,6 +48,12 @@
         version = "1.2.0";
         sha256 = "0wh295ncm8cbxmw9i3pvg703sn1gw7vp3slbklwjxskb4zivvfk4";
       }
+      {
+        name = "cmake-tools";
+        publisher = "ms-vscode";
+        version = "1.5.2";
+        sha256 = "e57b8ac689301ea7205a3a04dd5809ae9c08e689360969e7d2003bbd97194f19";
+      }
     ];
 
   nixpkgs = {
