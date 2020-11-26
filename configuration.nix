@@ -41,4 +41,6 @@
   system.stateVersion = "20.09";
   nixpkgs.config.allowUnfree = true;
 
+  nixpkgs.overlays = [ (import ./overlays/packages.nix) ];
+
 }

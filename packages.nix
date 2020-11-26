@@ -11,6 +11,8 @@
 
   imports = [
     ./vscode.nix
+    ./modules/howdy.nix
+    ./modules/ir_toggle.nix
   ];
 
   vscode.user = "thomas";
@@ -82,6 +84,13 @@
   };
 
   services = {
+
+    ir-toggle.enable = true;
+    howdy = {
+      enable = true;
+      device = "/dev/video0";
+    };
+
     # Enable the X11 windowing system.
     xserver = {
       enable = true;
