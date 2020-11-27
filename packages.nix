@@ -88,7 +88,7 @@
     ir-toggle.enable = true;
     howdy = {
       enable = true;
-      device = "/dev/video0";
+      device = "/dev/video2";
     };
 
     # Enable the X11 windowing system.
