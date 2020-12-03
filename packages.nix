@@ -135,20 +135,5 @@
   hardware.ledger.enable = true;
 
   programs = {
-    zsh = {
-      enable = true;
-      interactiveShellInit = ''
-        export ZSH=${pkgs.oh-my-zsh}/share/oh-my-zsh/
-        path+=('~/.npm-global/bin')
-        export PATH
-
-        # oh-my-zsh options
-        ZSH_THEME="agnoster"
-        plugins=(git)
-
-        source $ZSH/oh-my-zsh.sh
-      '';
-     promptInit = ""; # Clear this to avoid conflict with omz
-    };
   };
 }
