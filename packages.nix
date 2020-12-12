@@ -118,11 +118,11 @@
     tlp.enable = true;
 
     # Enable bluetooth service
-    blueman.enable = false;
+    blueman.enable = true;
   };
 
   # Enable bluetooth
-  hardware.bluetooth.enable = false;
+  hardware.bluetooth.enable = true;
 
   # Enable sound.
   nixpkgs.config.pulseaudio = true;
