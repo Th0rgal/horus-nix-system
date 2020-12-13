@@ -1,18 +1,19 @@
 { pkgs, ... }: {
-  nixpkgs.overlays = [
-    (import ./nix-nerd-fonts-overlay/default.nix)
-  ];
 
   fonts = {
     enableDefaultFonts = true; 
     enableFontDir = true;
     fonts = with pkgs; [
-        nerd-fonts.firacode
-        nerd-fonts.jetbrainsmono
-        corefonts
-        dejavu_fonts
-        source-code-pro
-        ubuntu_font_family
+      corefonts
+      dejavu_fonts
+      source-code-pro
+      ubuntu_font_family
+      (nerdfonts.override { 
+        fonts = [ 
+          "FiraCode"
+          "JetBrainsMono"
+        ];
+      })
     ];
   };
 }
