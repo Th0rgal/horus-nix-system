@@ -23,8 +23,8 @@
       {
         name = "latex-workshop";
         publisher = "James-Yu";
-        version = "8.13.2";
-        sha256 = "1hpsb4f9b8b04j8hfqbr5fsxj2rrbk7x51nl16j1f8vkdcpkd5zx";
+        version = "8.15.0";
+        sha256 = "0v4pq3l6g4dr1qvnmgsw148061lngwmk3zm12q0kggx85blki12d";
       }
       {
         name = "better-toml";
@@ -35,26 +35,26 @@
       {
         name = "docs-yaml";
         publisher = "docsmsft";
-        version = "0.2.5";
-        sha256 = "1ix1l4xvxasbcc2z8hbf5ph3pfzz3vjrhbwc0qrf55b8a4sq8hql";
+        version = "0.2.6";
+        sha256 = "0fsvq77sdp7wln7xfc1yy3x30pdvk2rgy056i3vlrgvlk8gbzi2n";
       }
       {
         name = "markdown-preview-enhanced";
         publisher = "shd101wyy";
-        version = "0.5.13";
-        sha256 = "0ixw6x6cvfr97ldrmn5ls5kcn788pp6qay05mrsjz7fadmhidyxa";
+        version = "0.5.16";
+        sha256 = "0w5w2np8fkxpknq76yv8id305rxd8a1p84p9k0jwwwlrsyrz31q8";
       }
       {
         name = "vsc-material-theme-icons";
         publisher = "Equinusocio";
-        version = "1.2.0";
-        sha256 = "0wh295ncm8cbxmw9i3pvg703sn1gw7vp3slbklwjxskb4zivvfk4";
+        version = "1.2.2";
+        sha256 = "06xfv8ggli88zg1hyrd7m494fl6bz4fspbxy626nsswq4f26msms";
       }
       {
         name = "cmake-tools";
         publisher = "ms-vscode";
-        version = "1.5.2";
-        sha256 = "e57b8ac689301ea7205a3a04dd5809ae9c08e689360969e7d2003bbd97194f19";
+        version = "1.5.3";
+        sha256 = "1y2s8rsc94ywbr23x9lhz0idp0d2lbv2vck636blvxsgxmcmmx8d";
       }
     ];
 
