@@ -62,6 +62,12 @@
         version = "0.16.22";
         sha256 = "08fj7h6dw56s40l9fkn4xz1valxpwhc4n8vw7d44264cabcsmkrw";
       }
+      {
+        name = "nix-env-selector";
+        publisher = "arrterian";
+        version = "0.1.2";
+        sha256 = "1n5ilw1k29km9b0yzfd32m8gvwa2xhh6156d4dys6l8sbfpp2cv9";
+      }
     ];
 
   nixpkgs = {
