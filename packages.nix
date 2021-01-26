@@ -56,6 +56,12 @@
         version = "1.5.3";
         sha256 = "1y2s8rsc94ywbr23x9lhz0idp0d2lbv2vck636blvxsgxmcmmx8d";
       }
+      {
+        name = "lean";
+        publisher = "jroesch";
+        version = "0.16.22";
+        sha256 = "08fj7h6dw56s40l9fkn4xz1valxpwhc4n8vw7d44264cabcsmkrw";
+      }
     ];
 
   nixpkgs = {
