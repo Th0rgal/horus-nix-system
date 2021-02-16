@@ -54,7 +54,7 @@
 
       # Enable lightdm
       displayManager.lightdm.enable = true;
-      desktopManager.xterm.enable = false;
+      desktopManager.xterm.enable = true;
     };   
 
     # Enable CUPS to print documents.
