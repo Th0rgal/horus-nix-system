@@ -1,4 +1,7 @@
 { pkgs, ... }: {
+
+  nix.trustedUsers = [ "root" "thomas" ];
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users = {
     users.thomas = {
