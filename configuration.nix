@@ -7,7 +7,6 @@
       ./users.nix
       ./fonts.nix
       ./packages.nix
-      ./keybase.nix
     ];
 
   boot = {
