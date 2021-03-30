@@ -2,12 +2,8 @@
 
 {
 
-  imports = [ 
-      ./hardware-configuration.nix
-      ./users.nix
-      ./fonts.nix
-      ./packages.nix
-    ];
+  imports =
+    [ ./hardware-configuration.nix ./users.nix ./fonts.nix ./packages.nix ];
 
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
