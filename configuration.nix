@@ -30,7 +30,7 @@
     font = "Lat2-Terminus16";
     keyMap = "fr";
   };
-  i18n.defaultLocale = "fr_FR.UTF-8";
+  i18n.defaultLocale = "en_US.UTF-8";
   time.timeZone = "Europe/Paris";
 
   system.stateVersion = "20.09";
