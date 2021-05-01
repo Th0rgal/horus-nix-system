@@ -18,7 +18,7 @@
   networking = {
     hostName = "horus";
     networkmanager.enable = true;
-    #nameservers = [ "1.1.1.1" "9.9.9.9" ];
+    nameservers = [ "1.1.1.1" "1.0.0.1" ];
     firewall = {
       allowPing = true;
       allowedTCPPorts = [ 443 3000 8080 25565 ];
