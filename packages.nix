@@ -2,17 +2,22 @@
 
   environment = {
     systemPackages = with pkgs; [
-      neovim wget git pv nodejs brightnessctl system-config-printer ccid libimobiledevice
+      neovim
+      wget
+      git
+      pv
+      nodejs
+      brightnessctl
+      system-config-printer
+      ccid
+      libimobiledevice
     ];
     variables.EDITOR = "nvim";
   };
 
   services.usbmuxd.enable = true;
 
-  imports = [
-    ./modules/howdy.nix
-    ./modules/ir_toggle.nix
-  ];
+  imports = [ ./modules/howdy.nix ./modules/ir_toggle.nix ];
 
   nixpkgs = {
 
@@ -22,13 +27,13 @@
           viAlias = true;
           vimAlias = true;
           configure = {
-              #customRC = ''
-                # here your custom configuration goes!
-              #'';
-              packages.myVimPackage = with pkgs.vimPlugins; {
-                start = [ vim-nix ];
-                opt = [ ];
-              };      
+            #customRC = ''
+            # here your custom configuration goes!
+            #'';
+            packages.myVimPackage = with pkgs.vimPlugins; {
+              start = [ vim-nix ];
+              opt = [ ];
+            };
           };
         };
       })
@@ -55,7 +60,7 @@
       # Enable lightdm
       displayManager.lightdm.enable = true;
       desktopManager.xterm.enable = true;
-    };   
+    };
 
     # Enable CUPS to print documents.
     printing = {
@@ -86,6 +91,5 @@
 
   hardware.ledger.enable = true;
 
-  programs = {
-  };
+  programs = { };
 }
