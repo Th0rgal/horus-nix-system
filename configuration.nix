@@ -33,7 +33,7 @@
   i18n.defaultLocale = "en_US.UTF-8";
   time.timeZone = "Europe/Paris";
 
-  system.stateVersion = "20.09";
+  system.stateVersion = "21.05";
   nixpkgs.config.allowUnfree = true;
 
   nixpkgs.overlays = [ (import ./overlays/packages.nix) ];
