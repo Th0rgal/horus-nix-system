@@ -76,6 +76,9 @@
 
     # Enable bluetooth service
     blueman.enable = true;
+
+    # Enable keyring
+    gnome3.gnome-keyring.enable = true;
   };
 
   # Enable bluetooth
